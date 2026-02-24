@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uyen Bui — Portfolio</title>
+  <meta name="description" content="Portfolio — Applied Math, Simulation, PDEs" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background -->
+  <canvas id="c" aria-hidden="true"></canvas>
+
+  <!-- Top Nav -->
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Go to top">
+      <span class="dot"></span>
+      <span>Bui Dang Hanh Uyen</span>
+    </a>
+    <nav class="links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="menuBtn" class="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="menu" class="menu" hidden>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#research">Research</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Main -->
+  <main id="top" class="wrap">
+    <section class="hero">
+      <div class="heroCard">
+        <p class="kicker">Applied Mathematics • Simulation • PDEs</p>
+        <h1>
+          I build <span class="accent">models</span> and
+          <span class="accent">visualizations</span>.
+        </h1>
+        <p class="sub">
+          A clean, research‑vibe portfolio with an interactive particle-wave background.
+          Move your mouse / touch to perturb the field.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn primary" href="#projects">See Projects</a>
+          <a class="btn" href="#contact">Contact</a>
+          <a class="btn ghost" href="assets/CV.pdf" download>Download CV</a>
+        </div>
+
+        <div class="metaRow">
+          <span class="pill">Vietnam (UTC+7)</span>
+          <span class="pill">Open to PhD 2026</span>
+          <span class="pill">C# • Python • LaTeX</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="grid2">
+        <div class="card">
+          <h3>Short bio</h3>
+          <p>
+            Write 4–6 lines about yourself here. Keep it simple: what you do,
+            what you’re aiming for, what you love working on.
+          </p>
+          <ul class="list">
+            <li><b>Focus:</b> dynamical systems, PDEs, pattern formation</li>
+            <li><b>Tools:</b> Python, NumPy/SciPy, MATLAB, FEniCSx, LaTeX</li>
+            <li><b>Industry:</b> simulation & game math</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Highlights</h3>
+          <div class="kpi">
+            <div class="kpiItem"><div class="kpiNum">10+</div><div class="kpiLbl">mini projects</div></div>
+            <div class="kpiItem"><div class="kpiNum">3</div><div class="kpiLbl">research themes</div></div>
+            <div class="kpiItem"><div class="kpiNum">2026</div><div class="kpiLbl">target PhD intake</div></div>
+          </div>
+          <p class="muted">
+            Tip: replace these with your real numbers (papers, talks, repos, etc.).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <p class="muted">Three “tiles” you can quickly replace with your real work.</p>
+
+      <div class="tiles">
+        <article class="tile">
+          <h3>Traffic Flow + Max‑Flow/Min‑Cut</h3>
+          <p>Network flow model + visualization + classroom‑ready report.</p>
+          <div class="tags">
+            <span>Graphs</span><span>Optimization</span><span>Python</span>
+          </div>
+          <div class="tileLinks">
+            <a href="#" target="_blank" rel="noreferrer">Demo</a>
+            <a href="#" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </article>
+
+        <article class="tile">
+          <h3>Particle‑Wave Background</h3>
+          <p>Interactive canvas “field” inspired by overlapping waves.</p>
+          <div class="tags">
+            <span>Canvas</span><span>Visualization</span><span>JS</span>
+          </div>
+          <div class="tileLinks">
+            <a href="#top">Live</a>
+            <a href="#" target="_blank" rel="noreferrer">Write‑up</a>
+          </div>
+        </article>
+
+        <article class="tile">
+          <h3>Reaction–Diffusion Patterns</h3>
+          <p>Simple Turing patterns with parameter sweeps and clean figures.</p>
+          <div class="tags">
+            <span>PDE</span><span>Pattern Formation</span><span>FEniCSx</span>
+          </div>
+          <div class="tileLinks">
+            <a href="#" target="_blank" rel="noreferrer">Figures</a>
+            <a href="#" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="research" class="section">
+      <h2>Research</h2>
+      <div class="grid2">
+        <div class="card">
+          <h3>Themes</h3>
+          <ul class="list">
+            <li>Nonlinear dynamics & stability</li>
+            <li>Reaction–diffusion, Turing instabilities</li>
+            <li>Transport PDEs and anisotropic/time‑varying domains</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Selected notes</h3>
+          <p class="muted">
+            Add 2–3 bullets each with a link to a PDF note, a preprint, or a repo.
+          </p>
+          <ul class="list">
+            <li><a href="#" target="_blank" rel="noreferrer">Mini‑paper: title here</a></li>
+            <li><a href="#" target="_blank" rel="noreferrer">Talk slides: title here</a></li>
+            <li><a href="#" target="_blank" rel="noreferrer">Code notebook: title here</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="grid2">
+        <div class="card">
+          <h3>Say hi</h3>
+          <p class="muted">Replace these with your real links.</p>
+          <ul class="list">
+            <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+            <li>GitHub: <a href="https://github.com/yourname" target="_blank" rel="noreferrer">github.com/yourname</a></li>
+            <li>Google Scholar: <a href="#" target="_blank" rel="noreferrer">Scholar profile</a></li>
+            <li>LinkedIn: <a href="#" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <form class="card form" onsubmit="return false;">
+          <h3>Quick message (client‑side)</h3>
+          <label>
+            <span>Name</span>
+            <input id="name" placeholder="Your name" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea id="msg" rows="4" placeholder="What’s up?"></textarea>
+          </label>
+          <button id="copyBtn" class="btn primary" type="button">Copy message</button>
+          <p class="muted small">
+            This button copies your text so you can paste into email/DM.
+            (No backend required.)
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Your Name</span>
+      <span class="sep">•</span>
+      <span>Built with HTML/CSS/JS</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
